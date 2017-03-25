@@ -87,7 +87,7 @@ ENDIF("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
 # Installation stuff
 ################################################################################
 
-SET(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "add a postfix, usually d on windows")
+#SET(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "add a postfix, usually d on windows")
 ADD_DEFINITIONS(-DDEBUG_POSTFIX="${CMAKE_DEBUG_POSTFIX}")
 IF(UNIX AND NOT WIN32 AND NOT APPLE)
   IF(CMAKE_BUILD_TYPE STREQUAL "Debug")
